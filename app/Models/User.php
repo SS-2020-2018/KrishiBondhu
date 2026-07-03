@@ -14,6 +14,7 @@ class User extends Authenticatable
         'name',
         'email',
         'phone',
+        'profile_image',
         'password',
         'role',
     ];
@@ -37,13 +38,13 @@ class User extends Authenticatable
         return $this->hasMany(Product::class);
     }
 
-    public function isAdmin(): bool
-    {
-        return $this->role === 'admin';
-    }
-
     public function isFarmer(): bool
     {
         return $this->role === 'farmer';
+    }
+
+    public function isSeller(): bool
+    {
+        return $this->role === 'seller';
     }
 }

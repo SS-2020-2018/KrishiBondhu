@@ -5,18 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class FarmerProfile extends Model
+class PestReport extends Model
 {
     use HasFactory;
 
     protected $fillable = [
         'user_id',
-        'profile_image', 
-        'farm_location',
         'crop_type',
-        'land_size',
-        'contact_details',
-        'farming_history',
+        'pest_name',
+        'severity',
+        'description',
+        'status'
     ];
 
     public function user()

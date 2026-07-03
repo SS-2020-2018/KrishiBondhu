@@ -42,9 +42,7 @@
                             <label for="role" class="form-label fw-bold">Register As</label>
                             <select class="form-select" id="role" name="role" required>
                                 <option value="farmer" {{ old('role') == 'farmer' ? 'selected' : '' }}>Farmer (কৃষক)</option>
-                                <option value="buyer" {{ old('role') == 'buyer' ? 'selected' : '' }}>Buyer / Wholesaler</option>
                                 <option value="seller" {{ old('role') == 'seller' ? 'selected' : '' }}>Agri-Equipment Seller</option>
-                                <option value="admin" {{ old('role') == 'admin' ? 'selected' : '' }}>Administrator</option>
                             </select>
                         </div>
 

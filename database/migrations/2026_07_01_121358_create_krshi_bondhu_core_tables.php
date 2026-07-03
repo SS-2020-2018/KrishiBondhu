@@ -15,7 +15,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('phone')->nullable();
             $table->string('password');
-            $table->enum('role', ['farmer', 'buyer', 'seller', 'admin'])->default('farmer');
+            $table->enum('role', ['farmer', 'seller'])->default('farmer');
             $table->rememberToken();
             $table->timestamps();
         });
@@ -24,7 +24,7 @@ return new class extends Migration
         Schema::create('farmer_profiles', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
-            $table->string('profile_image')->nullable(); // Column added for tracking images
+            $table->string('profile_image')->nullable(); 
             $table->string('farm_location')->nullable();
             $table->string('crop_type')->nullable();
             $table->decimal('land_size', 8, 2)->nullable();

@@ -22,7 +22,7 @@ class AuthController extends Controller
             'email' => 'required|string|email|max:255|unique:users',
             'phone' => 'required|string|max:20',
             'password' => 'required|string|min:6|confirmed',
-            'role' => 'required|in:farmer,buyer,seller,admin',
+            'role' => 'required|in:farmer,seller',
         ]);
 
         $user = User::create([
@@ -63,11 +63,7 @@ class AuthController extends Controller
 
         if (Auth::attempt($credentials, $request->has('remember'))) {
             $request->session()->regenerate();
-            
-            if (Auth::user()->role === 'farmer') {
-                return redirect()->route('profile.farmer');
-            }
-            
+
             return redirect()->route('home');
         }
 
