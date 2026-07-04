@@ -95,24 +95,24 @@
             <div class="row">
                 <div class="col-md-4 mb-3">
                     <h5>Krshi Bondhu</h5>
-                    <p class="small text-muted">Empowering modern farmers with unified marketplaces, localized price tracking indicators, and immediate diagnostic pest reports.</p>
+                    <p>Empowering modern farmers with unified marketplaces, localized price tracking indicators, and immediate diagnostic pest reports.</p>
                 </div>
                 <div class="col-md-4 mb-3">
                     <h5>Quick Links</h5>
-                    <ul class="list-unstyled small">
-                        <li><a href="#" class="text-decoration-none text-muted">Privacy Policy</a></li>
-                        <li><a href="#" class="text-decoration-none text-muted">Terms of Services</a></li>
-                        <li><a href="#" class="text-decoration-none text-muted">FAQ Guidebook</a></li>
+                    <ul style="line-height: 1.8;" >
+                        <li><a href="#" style="text-decoration: none;">Privacy Policy</a></li>
+                        <li><a href="#" style="text-decoration: none;">Terms of Services</a></li>
+                        <li><a href="#" style="text-decoration: none;">FAQ Guidebook</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 mb-3">
                     <h5>Contact Support</h5>
-                    <p class="small text-muted mb-1">📞 Helpdesk: +880 1700-000000</p>
-                    <p class="small text-muted">📧 Email: support@krshibondhu.com</p>
+                    <p>📞 Helpdesk:01741662609</p>
+                    <p>📧 Email: support@krshibondhu.com</p>
                 </div>
             </div>
             <hr class="border-secondary">
-            <div class="text-center small text-muted">
+            <div style="text-align: center; font-size: 0.9rem; color: #6c757d;">
                 &copy; 2026 Krshi Bondhu. All Rights Reserved. Built for Agricultural Modernization.
             </div>
         </div>
